@@ -88,7 +88,7 @@ git push -u origin "nombre-de-su-rama"
 
 1. Ingresar al repositorio en GitHub.
 2. Hacer clic en el botón **"Compare & pull request"** que aparece luego del push.
-3. Verificar que la rama base sea `main` (o la rama indicada por el docente) y que la rama de comparación sea la suya.
+3. Verificar que la rama base sea `main` y que la rama de comparación sea la suya.
 4. Agregar como título su **legajo, apellido y nombre**.
 5. Hacer clic en **"Create pull request"**.
 
