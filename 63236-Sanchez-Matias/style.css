@@ -1,0 +1,66 @@
+.cuadrado {
+  margin-left: 35px;
+  margin-bottom: 14px;
+  width: 120px;
+  height: 120px;
+  border-radius: 8px;
+  background-color: gray;
+  border-color: red;
+}
+
+.rojo {
+  background-color: red;
+  padding: 11px;
+  border-radius: 10px;
+}
+.verde {
+  background-color: green;
+  padding: 11px;
+  border-radius: 10px;
+}
+.amarillo {
+  background-color: rgb(221, 255, 0);
+  padding: 11px;
+  border-radius: 10px;
+}
+
+button {
+  transition: 0.3s ease;
+}
+
+button:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.completarCampos {
+  color: red;
+}
+
+label {
+  display: block;
+}
+
+/* ? */
+.oculto{
+    display: none;
+}
+.tarjeta {
+  background: #f0f0f0;
+  padding: 16 px;
+  border-radius: 8 px;
+  margin-bottom: 12 px;
+}
+
+.perfilInputs{
+    display: block;
+    margin-top:17px;
+    margin-bottom: 8px;
+}
+
+.div{
+    border: 1px solid black;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 8px;
+}
