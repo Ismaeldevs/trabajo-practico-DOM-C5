@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Practica DOM</title>
+  </head>
+  <body>
+    <!-- 1 -->
+    <h1 id="titulo">Esperando cambio...</h1>
+    <button id="btnCambiar">Cambiar titulo</button>
+    <p>--------------------------------------------------------------------</p>
+    <!-- 2 -->
+    <div id="cuadrado" class="cuadrado"></div>
+    <button id="btnRojo" class="rojo">Rojo</button>
+    <button id="btnAmarillo" class="amarillo">Amarillo</button>
+    <button id="btnVerde" class="verde">Verde</button>
+    <p>--------------------------------------------------------------------</p>
+    <!-- 3 -->
+    <h2 id="completarCampos">Completa todos los campos</h2>
+    <p>usuario</p>
+    <input type="password" id="inputUsuario" />
+    <p>contraseña</p>
+    <input type="text" id="inputContraseña" />
+    <button id="enviarForm">Enviar</button>
+    <p>--------------------------------------------------------------------</p>
+    <label>Tu nombre:</label>
+    <input type="text" id="inputNombre" placeholder="Ingrese su nombre aqui" />
+    <p id="escribirNombre">Escribi tu nombre arriba</p>
+    <p>--------------------------------------------------------------------</p>
+    <h2>Lista de Invitados</h2>
+    <input type="text" id="inputLista" placeholder="nombre del invitado" />
+    <button id="btnLista" class="rojo">Agregar</button>
+    <p id="aviso"></p>
+    <ul id="listaInvitados"></ul>
+    <p>--------------------------------------------------------------------</p>
+    <div class="tarjeta" id="tarjeta">
+      <h3>Informacion importante</h3>
+      <p>Este contenido puede mostrarse u ocultarse con el boton.</p>
+    </div>
+    <button id="botonOculto">Ocultar</button>
+    <p>--------------------------------------------------------------------</p>
+<h2>Crear perfil</h2>
+<input type="text" class="perfilInputs" id="inpNombre" placeholder="Ingrese el nombre">
+<input type="text" class="perfilInputs" id="Profesion" placeholder="Ingrese profesion">
+<input type="color" class="perfilInputs" id="InpColor" value ="#3 b82f6 ">
+<button id="btnGenerar">Generar tarjeta</button>
+<p id="avisoPerfil"></p>
+<div id="resultados"></div>
+    <script src="./js/DOM.JS"></script>    
+  </body>
+</html>
