@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ejercicios DOM</title>
+
+<style>
+body{
+    font-family: Arial, sans-serif;
+    margin:20px;
+}
+
+hr{
+    margin:20px 0;
+}
+
+.oculto{
+    display:none;
+}
+
+.tarjeta{
+    background:#f0f0f0;
+    padding:16px;
+    border-radius:8px;
+    margin-bottom:12px;
+}
+</style>
+
+</head>
+<body>
+
+<h1>Práctica DOM</h1>
+
+<hr>
+
+<!-- EJERCICIO 1 -->
+<h2>Ejercicio 1</h2>
+
+<h1 id="titulo">Esperando cambio...</h1>
+<button id="btnCambiar">Cambiar título</button>
+
+<hr>
+
+<!-- EJERCICIO 2 -->
+<h2>Ejercicio 2</h2>
+
+<div id="cuadrado"
+style="width:120px;height:120px;background:gray;border-radius:8px;margin-bottom:12px;">
+</div>
+
+<button id="btnRojo">Rojo</button>
+<button id="btnAmarillo">Amarillo</button>
+<button id="btnVerde">Verde</button>
+
+<hr>
+
+<!-- EJERCICIO 3 -->
+<h2>Ejercicio 3</h2>
+
+<label>Usuario:</label>
+<input type="text" id="usuario"><br><br>
+
+<label>Contraseña:</label>
+<input type="password" id="contrasena"><br><br>
+
+<button id="btnLogin">Ingresar</button>
+
+<p id="mensaje"></p>
+
+<hr>
+
+<!-- EJERCICIO 4 -->
+<h2>Ejercicio 4</h2>
+
+<label>Tu nombre:</label>
+<input type="text" id="inputNombrePreview">
+
+<p id="preview">Escribí tu nombre arriba.</p>
+
+<hr>
+
+<!-- EJERCICIO 5 -->
+<h2>Ejercicio 5</h2>
+
+<input type="text" id="inputInvitado">
+<button id="btnAgregar">Agregar</button>
+
+<p id="aviso" style="color:red;"></p>
+
+<ul id="listaInvitados"></ul>
+
+<hr>
+
+<!-- EJERCICIO 6 -->
+<h2>Ejercicio 6</h2>
+
+<div class="tarjeta" id="tarjeta">
+<h3>Información importante</h3>
+<p>Este contenido puede mostrarse u ocultarse.</p>
+</div>
+
+<button id="btnToggle">Ocultar</button>
+
+<hr>
+
+<!-- EJERCICIO 7 -->
+<h2>Ejercicio 7</h2>
+
+<input type="text" id="inpNombre" placeholder="Nombre"><br><br>
+
+<input type="text" id="inpProfesion" placeholder="Profesión"><br><br>
+
+<input type="color" id="inpColor"><br><br>
+
+<button id="btnGenerar">Generar tarjeta</button>
+
+<p id="avisoP" style="color:red;"></p>
+
+<div id="resultados"></div>
+
+<script>
+
+// EJERCICIO 1
+const titulo = document.getElementById("titulo");
+const btnCambiar = document.getElementById("btnCambiar");
+
+btnCambiar.addEventListener("click", function () {
+    titulo.textContent = "¡Bienvenido al DOM!";
+    titulo.style.color = "navy";
+});
+
+// EJERCICIO 2
+const cuadrado = document.getElementById("cuadrado");
+
+document.getElementById("btnRojo").addEventListener("click", function(){
+    cuadrado.style.backgroundColor = "red";
+});
+
+document.getElementById("btnAmarillo").addEventListener("click", function(){
+    cuadrado.style.backgroundColor = "yellow";
+});
+
+document.getElementById("btnVerde").addEventListener("click", function(){
+    cuadrado.style.backgroundColor = "green";
+});
+
+// EJERCICIO 3
+const inputUsuario = document.getElementById("usuario");
+const inputContrasena = document.getElementById("contrasena");
+const mensaje = document.getElementById("mensaje");
+
+inputUsuario.addEventListener("input", function(){
+    mensaje.textContent = "";
+});
+
+inputContrasena.addEventListener("input", function(){
+    mensaje.textContent = "";
+});
+
+btnLogin.addEventListener("click", function(){
+
+    const usuario = inputUsuario.value.trim();
+    const contrasena = inputContrasena.value.trim();
+
+    if(usuario === "" || contrasena === ""){
+        mensaje.textContent = "Completá todos los campos.";
+        mensaje.style.color = "red";
+    }
+    else if(usuario === "admin" && contrasena === "1234"){
+        mensaje.textContent = "¡Bienvenido, admin!";
+        mensaje.style.color = "green";
+    }
+    else{
+        mensaje.textContent = "Credenciales incorrectas.";
+        mensaje.style.color = "red";
+    }
+
+});
+
+// EJERCICIO 4
+const inputNombrePreview = document.getElementById("inputNombrePreview");
+const preview = document.getElementById("preview");
+
+inputNombrePreview.addEventListener("input", function(){
+
+    if(inputNombrePreview.value.trim() === ""){
+        preview.textContent = "Escribí tu nombre arriba.";
+    }
+    else{
+        preview.textContent = "Hola, " + inputNombrePreview.value + "!";
+    }
+
+});
+
+// EJERCICIO 5
+const inputInvitado = document.getElementById("inputInvitado");
+const btnAgregar = document.getElementById("btnAgregar");
+const listaInvitados = document.getElementById("listaInvitados");
+const aviso = document.getElementById("aviso");
+
+btnAgregar.addEventListener("click", function(){
+
+    const nombre = inputInvitado.value.trim();
+
+    if(nombre === ""){
+        aviso.textContent = "Ingresá un nombre.";
+        return;
+    }
+
+    aviso.textContent = "";
+
+    const li = document.createElement("li");
+    li.textContent = nombre + " ";
+
+    const btnQuitar = document.createElement("button");
+    btnQuitar.textContent = "Quitar";
+
+    btnQuitar.addEventListener("click", function(){
+        li.remove();
+    });
+
+    li.appendChild(btnQuitar);
+    listaInvitados.appendChild(li);
+
+    inputInvitado.value = "";
+    inputInvitado.focus();
+
+});
+
+// EJERCICIO 6
+const tarjeta = document.getElementById("tarjeta");
+const btnToggle = document.getElementById("btnToggle");
+
+btnToggle.addEventListener("click", function(){
+
+    const oculta = tarjeta.classList.toggle("oculto");
+
+    if(oculta){
+        btnToggle.textContent = "Mostrar";
+    }
+    else{
+        btnToggle.textContent = "Ocultar";
+    }
+
+});
+
+// EJERCICIO 7
+const btnGenerar = document.getElementById("btnGenerar");
+const resultados = document.getElementById("resultados");
+
+btnGenerar.addEventListener("click", function(){
+
+    const nombre = document.getElementById("inpNombre").value.trim();
+    const profesion = document.getElementById("inpProfesion").value.trim();
+    const color = document.getElementById("inpColor").value;
+    const avisoP = document.getElementById("avisoP");
+
+    if(nombre === "" || profesion === ""){
+        avisoP.textContent = "Completá todos los campos.";
+        return;
+    }
+
+    avisoP.textContent = "";
+
+    const tarjetaNueva = document.createElement("div");
+
+    tarjetaNueva.style.borderLeft = "6px solid " + color;
+    tarjetaNueva.style.padding = "12px";
+    tarjetaNueva.style.marginTop = "10px";
+    tarjetaNueva.style.borderRadius = "8px";
+
+    const h3 = document.createElement("h3");
+    h3.textContent = nombre;
+
+    const p = document.createElement("p");
+    p.textContent = profesion;
+
+    const btnEliminar = document.createElement("button");
+    btnEliminar.textContent = "Eliminar tarjeta";
+
+    btnEliminar.addEventListener("click", function(){
+        tarjetaNueva.remove();
+    });
+
+    tarjetaNueva.appendChild(h3);
+    tarjetaNueva.appendChild(p);
+    tarjetaNueva.appendChild(btnEliminar);
+
+    resultados.appendChild(tarjetaNueva);
+
+});
+
+</script>
+
+</body>
+</html>
