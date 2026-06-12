@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TP DOM - Ramiro</title>
+    <style>
+        /* Los estilos quedan acá adentro, así no necesitás carpeta CSS */
+        body {
+            font-family: Arial, sans-serif;
+            padding: 30px;
+            background-color: #f4f7f6;
+        }
+        .ejercicio {
+            background: white;
+            padding: 20px;
+            margin-bottom: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Mis Ejercicios de JavaScript DOM</h1>
+    <p>Legajo: 62423</p>
+
+    <div class="ejercicio">
+        <h2>Ejercicio1</h2>
+        <h1 id="titulo">Esperando cambio...</h1>
+        <button id="btnCambiar">Cambiar titulo</button>
+    </div>
+
+        <div class="ejercicio">
+        <h2>Ejercicio 2 - Semáforo</h2>
+        <div id="cuadrado" style="width:120px; height:120px; background:gray; border-radius:8px; margin-bottom:12px;"></div>
+        <button id="btnRojo">Rojo</button>
+        <button id="btnAmarillo">Amarillo</button>
+        <button id="btnVerde">Verde</button>
+    </div>
+
+    <div class="ejercicio">
+        <h2>Ejercicio 3 - Formulario de Login</h2>
+        <label>Usuario:</label>
+        <input type="text" id="usuario" placeholder="Tu usuario"> <br><br>
+        <label>Contraseña:</label>
+        <input type="password" id="contrasena" placeholder="Tu contraseña"> <br><br>
+        <button id="btnLogin">Ingresar</button>
+        <p id="mensaje" style="font-weight: bold;"></p>
+    </div>
+
+    <div class="ejercicio">
+        <h2>Ejercicio 4 - Nombre en Tiempo Real</h2>
+        <label>Tu nombre:</label>
+        <input type="text" id="inputNombre" placeholder="Escribí aquí...">
+        <p id="preview">Escribí tu nombre arriba.</p>
+    </div>
+    
+    <!-- EJERCICIO 5 -->
+    <div class="ejercicio">
+        <h2>Ejercicio 5 - Lista de Invitados</h2>
+        <input type="text" id="inputInvitado" placeholder="Nombre del invitado">
+        <button id="btnAgregar">Agregar</button>
+        <p id="aviso" style="color: red;"></p>
+        <ul id="listaInvitados"></ul>
+    </div>
+
+    <!-- EJERCICIO 6 -->
+    <div class="ejercicio">
+        <h2>Ejercicio 6 - Alternar Contenido</h2>
+        <style>
+            .oculto { display: none; }
+            .tarjeta { background: #f0f0f0; padding: 16px; border-radius: 8px; margin-bottom: 12px; }
+        </style>
+        <div class="tarjeta" id="tarjeta">
+            <h3>Información importante</h3>
+            <p>Este contenido puede mostrarse u ocultarse con el botón.</p>
+        </div>
+        <button id="btnToggle">Ocultar</button>
+    </div>
+
+    <!-- EJERCICIO 7 -->
+    <div class="ejercicio">
+        <h2>Ejercicio 7 - Generador de Tarjetas de Perfil</h2>
+        <input type="text" id="inpNombre" placeholder="Nombre"><br><br>
+        <input type="text" id="inpProfesion" placeholder="Profesión"><br><br>
+        <label>Color favorito:</label>
+        <input type="color" id="inpColor" value="#3b82f6"><br><br>
+        <button id="btnGenerar">Generar tarjeta</button>
+        <p id="avisoP" style="color: red;"></p>
+        <div id="resultados"></div>
+    </div>
+
+
+    <script src="ejercicio1.js"></script>
+    <script src="ejercicio2.js"></script>
+    <script src="ejercicio3.js"></script>
+    <script src="ejercicio4.js"></script>
+    <script src="ejercicio5.js"></script>
+    <script src="ejercicio6.js"></script>
+    <script src="ejercicio7.js"></script>
+</body>
+
+</body>
+</html>
