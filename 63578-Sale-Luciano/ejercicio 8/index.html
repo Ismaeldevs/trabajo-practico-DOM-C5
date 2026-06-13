@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios DOM</title>
+    <style>
+        .oculto { 
+            display: none; 
+        }
+        .tarjeta { 
+            background: #f0f0f0; 
+            padding: 16px;
+            border-radius: 8px; 
+            margin-bottom: 12px; 
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Lista de invitados</h2>
+    <input type="text" id="inputNombre" placeholder="Nombre del invitado" />
+    <button id="btnAgregar">Agregar</button>
+    <p id="aviso" style="color: red;"></p>
+    <ul id="listaInvitados"></ul>
+
+    <hr />
+
+    <div class="tarjeta" id="tarjeta">
+        <h3>Información importante</h3>
+        <p>Este contenido puede mostrarse u ocultarse con el botón.</p>
+    </div>
+    <button id="btnToggle">Ocultar</button>
+
+    <hr />
+
+    <h2>Crear perfil</h2>
+    <input type="text" id="inpNombre" placeholder="Nombre" /><br />
+    <input type="text" id="inpProfesion" placeholder="Profesión" /><br />
+    <input type="color" id="inpColor" value="#3b82f6" /><br />
+    <button id="btnGenerar">Generar tarjeta</button>
+    <p id="avisoP" style="color: red;"></p>
+    <div id="resultados"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
