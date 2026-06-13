@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+  <button class="nb" onclick="location.href='index.html'" style="margin:1rem 0">⬅ Volver al índice</button>
+  <!-- EJ 3 -->
+  <div class="card">
+    <div class="card-title"><span class="ej-badge">3</span> Formulario de Login <span class="nivel facil">Fácil</span><span class="solved-tag">✅ Resuelto</span></div>
+    <p>Valida usuario/contraseña y muestra mensaje con color.</p>
+    <div class="widget">
+      <div class="demo-label">Demo interactiva · usuario: <code>admin</code> / pass: <code>1234</code></div>
+      <input type="text" id="ej3-user" placeholder="Tu usuario" oninput="document.getElementById('ej3-msg').textContent=''">
+      <input type="password" id="ej3-pass" placeholder="Tu contraseña" oninput="document.getElementById('ej3-msg').textContent=''">
+      <button onclick="ej3Login()">Ingresar</button>
+      <div id="ej3-msg" class="msg"></div>
+    </div>
+  </div>
+ <script src="../js/03.js"></script>
+</body>
+</html>
