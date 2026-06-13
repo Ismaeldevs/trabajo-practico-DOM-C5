@@ -1,0 +1,86 @@
+.pagina {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.encabezado {
+    background-color: #1e88e5;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+.titulo-principal {
+    margin: 0;
+    font-size: 36px;
+}
+
+.subtitulo {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.seccion {
+    background-color: white;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.titulo-seccion {
+    color: #1e88e5;
+    margin-top: 0;
+}
+
+.texto {
+    line-height: 1.6;
+}
+
+.lista-habilidades {
+    padding-left: 20px;
+}
+
+.item-habilidad {
+    margin-bottom: 8px;
+}
+
+.tarjeta-proyecto {
+    background-color: #e3f2fd;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.titulo-proyecto {
+    margin-top: 0;
+    color: #1565c0;
+}
+
+.contacto {
+    text-align: center;
+}
+
+.tarjeta-contacto {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #e3f2fd;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.texto-contacto {
+    margin: 10px 0;
+}
+
+.pie-pagina {
+    background-color: #1e88e5;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+.texto-footer {
+    margin: 0;
+}
