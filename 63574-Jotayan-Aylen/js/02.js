@@ -1,0 +1,1 @@
+// La lógica del ej2 está en los onclick del HTML (no requiere JS separado)

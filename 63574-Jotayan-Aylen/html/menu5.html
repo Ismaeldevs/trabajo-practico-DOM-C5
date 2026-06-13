@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+  <button class="nb" onclick="location.href='index.html'" style="margin:1rem 0">⬅ Volver al índice</button>
+  <!-- EJ 5 -->
+  <div class="card">
+    <div class="card-title"><span class="ej-badge">5</span> Lista de invitados <span class="nivel medio">Medio</span><span class="solved-tag">✅ Resuelto</span></div>
+    <p>Agregar y quitar nombres de una lista dinámica.</p>
+    <div class="widget">
+      <div class="demo-label">Demo interactiva</div>
+      <input type="text" id="ej5-input" placeholder="Nombre del invitado">
+      <button onclick="ej5Agregar()">Agregar</button>
+      <p id="ej5-aviso" style="color:#f87171;font-size:.82rem;margin-top:.3rem;min-height:1rem"></p>
+      <ul id="ej5-lista"></ul>
+    </div>
+  </div>
+  <script src="../js/05.js"></script>
+</body>
+</html>
