@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TP DOM</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        section {
+            margin-bottom: 40px;
+            padding: 15px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+        }
+
+        .oculto {
+            display: none;
+        }
+
+        .tarjeta {
+            background: #f0f0f0;
+            padding: 16px;
+            border-radius: 8px;
+            margin-bottom: 12px;
+        }
+
+        #cuadrado {
+            width: 120px;
+            height: 120px;
+            background: gray;
+            border-radius: 8px;
+            margin-bottom: 12px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Trabajo Práctico DOM</h1>
+
+    <!-- EJERCICIO 1 -->
+    <section>
+        <h2>Ejercicio 1 - Cambiar título</h2>
+
+        <h1 id="titulo">Esperando cambio...</h1>
+        <button id="btnCambiar">Cambiar título</button>
+    </section>
+
+    <!-- EJERCICIO 2 -->
+    <section>
+        <h2>Ejercicio 2 - Semáforo</h2>
+
+        <div id="cuadrado"></div>
+
+        <button id="btnRojo">Rojo</button>
+        <button id="btnAmarillo">Amarillo</button>
+        <button id="btnVerde">Verde</button>
+    </section>
+
+    <!-- EJERCICIO 3 -->
+    <section>
+        <h2>Ejercicio 3 - Login</h2>
+
+        <label>Usuario:</label>
+        <input type="text" id="usuario">
+        <br><br>
+
+        <label>Contraseña:</label>
+        <input type="password" id="contrasena">
+        <br><br>
+
+        <button id="btnLogin">Ingresar</button>
+
+        <p id="mensaje"></p>
+    </section>
+
+    <!-- EJERCICIO 4 -->
+    <section>
+        <h2>Ejercicio 4 - Nombre en tiempo real</h2>
+
+        <input type="text" id="inputNombrePreview" placeholder="Escribí aquí...">
+
+        <p id="preview">Escribí tu nombre arriba.</p>
+    </section>
+
+    <!-- EJERCICIO 5 -->
+    <section>
+        <h2>Ejercicio 5 - Lista de invitados</h2>
+
+        <input type="text" id="inputInvitado" placeholder="Nombre del invitado">
+
+        <button id="btnAgregar">Agregar</button>
+
+        <p id="aviso" style="color:red;"></p>
+
+        <ul id="listaInvitados"></ul>
+    </section>
+
+    <!-- EJERCICIO 6 -->
+    <section>
+        <h2>Ejercicio 6 - Mostrar/Ocultar</h2>
+
+        <div class="tarjeta" id="tarjeta">
+            <h3>Información importante</h3>
+            <p>Este contenido puede mostrarse u ocultarse con el botón.</p>
+        </div>
+
+        <button id="btnToggle">Ocultar</button>
+    </section>
+
+    <!-- EJERCICIO 7 -->
+    <section>
+        <h2>Ejercicio 7 - Generador de perfiles</h2>
+
+        <input type="text" id="inpNombre" placeholder="Nombre">
+        <br><br>
+
+        <input type="text" id="inpProfesion" placeholder="Profesión">
+        <br><br>
+
+        <input type="color" id="inpColor" value="#3b82f6">
+        <br><br>
+
+        <button id="btnGenerar">Generar tarjeta</button>
+
+        <p id="avisoP" style="color:red;"></p>
+
+        <div id="resultados"></div>
+    </section>
+
+    
+    <script src="./JS/ej1.js"></script>
+    <script src="./JS/ej2.js"></script>
+    <script src="./JS/ej3.js"></script>
+    <script src="./JS/ej4.js"></script>
+    <script src="./JS/ej5.js"></script>
+    <script src="./JS/ej6.js"></script>
+    <script src="./JS/ej7.js"></script>
+</body>
+</html>
