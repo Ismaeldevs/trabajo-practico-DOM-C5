@@ -1,0 +1,21 @@
+* {
+  font-family: 'Poppins', sans-serif;
+}
+#listaInvitados li {
+  margin-bottom: 10px;
+}
+
+#listaInvitados button {
+  margin-left: 10px;
+}
+/* ------- */
+.oculto {
+  display: none;
+}
+
+.tarjeta {
+  background: #f0f0f0;
+  padding: 16px;
+  border-radius: 8px;
+  margin-bottom: 12px;
+}

@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <title>Trabajo paractico DOM</title>
+  </head>
+  <body>
+    <!-- 1 -->
+    <h3>Ejercicio 1 ============================================</h3>
+    <h1 id="titulo">Esperando cambio</h1>
+    <button id="btnCambiar">Cambiar titulo</button>
+
+    <!-- 2 -->
+    <h3>Ejercicio 2 ============================================</h3>
+    <div
+      id="cuadrado"
+      style=" width:120px; height:120px; background: gray;border-radius:8px;
+      margin-bottom:12px;">
+    </div>
+
+    <button id="btnRojo">Rojo</button>
+    <button id="btnAmarillo">Amarillo</button>
+    <button id="btnVerde">Verde</button>
+
+    <!-- 3 -->
+     <h3>Ejercicio 3 ============================================</h3>
+
+     <h2>Iniciar sesion</h2>
+
+     <label>Usuario:</label>
+     <input type="text" id="usuario" placeholder="Tu usuario"/>
+     <br></br>
+
+     <label>Contraseña</label>
+     <input type="password" id="contrasena" placeholder="Tu contraseña"/>
+     <br></br>
+
+     <button id="btnLogin">Ingresar</button>
+
+     <p id="mensaje" style="font-weight:bold;"></p>
+
+    <!-- 4 -->
+    <h3>Ejercicio 4 ============================================</h3>
+
+    <label>Tu nombre:</label>
+    <input type="text" id="inputNombre" placeholder="Escribir aqui"/>
+    <p id="preview">Escribi tu nombre arriba. </p>
+
+    <!-- 5 -->
+    <h3>Ejercicio 5 ============================================</h3>
+    
+    <h2>Lista de invitados</h2>
+
+    <input type="text" id="inputInvitado" placeholder="Nombre del invitado"/>
+    <button id="btnAgregar">Agregar</button>
+    <p id="aviso" style="color:red;"></p>
+
+    <ul id="listaInvitados"></ul>
+
+    <!-- 6 -->
+    <h3>Ejercicio 6 ============================================</h3>
+    <div class="tarjeta" id="tarjeta"> 
+      <h3>Informacion importante</h3>
+      <p>Este contenido puede mostrarse u ocultarse con el boton.</p>
+    </div>
+
+    <button id="btnToggle">Ocultar</button>
+
+    <!-- 7 -->
+    <h3>Ejercicio 7 ============================================</h3>
+    <h2>Crear perfil</h2>
+    <input type="text" id="inpNombre" placeholder="Nombre">
+    <br></br>
+    
+    <input type="text" id="inpProfesion" placeholder="Profesion">
+    <br></br>
+    
+    <input type="color" id="inpColor" value="#3b82f6">
+    <br></br>
+
+    <button id="btnGenerar">Generar tarjeta</button>
+    <p id="avisoP" style="color: red;"></p>
+
+    <div id="resultados"></div>
+
+    
+    <script src="./js/ejercicios-dom.js"></script>
+  </body>
+</html>
