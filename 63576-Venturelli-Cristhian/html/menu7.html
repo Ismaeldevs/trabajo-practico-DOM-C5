@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+  <button class="nb" onclick="location.href='index.html'" style="margin:1rem 0">⬅ Volver al índice</button>
+  <!-- EJ 7 -->
+  <div class="card">
+    <div class="card-title"><span class="ej-badge">7</span> Generador de tarjetas de perfil <span class="nivel medio">Medio</span><span class="solved-tag">✅ Resuelto</span></div>
+    <p>Formulario que genera tarjetas de perfil dinámicamente con color de borde elegible.</p>
+    <div class="widget">
+      <div class="demo-label">Demo interactiva</div>
+      <input type="text" id="ej7-nombre" placeholder="Nombre">
+      <input type="text" id="ej7-profesion" placeholder="Profesión">
+      <div style="display:flex;align-items:center;gap:.5rem;margin-bottom:.5rem">
+        <label style="font-size:.82rem;color:var(--muted)">Color:</label>
+        <input type="color" id="ej7-color" value="#6c63ff" style="width:50px;height:30px">
+      </div>
+      <button onclick="ej7Generar()">Generar tarjeta</button>
+      <p id="ej7-aviso" style="color:#f87171;font-size:.82rem;min-height:1rem"></p>
+      <div id="ej7-resultados"></div>
+    </div>
+  </div>
+  <script src="../js/07.js"></script>
+</body>
+</html>
