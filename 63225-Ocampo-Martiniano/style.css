@@ -1,0 +1,77 @@
+/* CSS HECHO CON IA, UN SALUDO PROFE */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+/* Reset general de la página */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.ej1 {
+  background-color: black; /* Fondo del cuadro */
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #0f172a; /* Fondo general oscuro */
+  color: #f8fafc;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  gap: 20px; /* Espacio entre el h1 y el cuadro .container */
+}
+
+/* Estilo para el título que quedó afuera */
+h1 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #38bdf8; /* Detalle en azul brillante */
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+/* El cuadro contenedor con los estilos pedidos */
+.container {
+  background-color: #1e293b; /* Color de fondo del cuadro */
+  padding: 30px;
+  border-radius: 8px; /* Border radius exacto de 5px */
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4); /* Sombra para darle relieve */
+  width: 100%;
+  max-width: 400px; /* Ancho controlado del cuadro */
+}
+
+/* Estilos de la lista interna */
+.container ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Separación entre botones */
+}
+
+/* Estilo de los enlaces como botones de navegación */
+.container ul li a {
+  display: block;
+  padding: 12px;
+  background-color: #334155;
+  color: #e2e8f0;
+  text-decoration: none;
+  text-align: center;
+  font-weight: 500;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+}
+
+/* Efecto visual al pasar el cursor para que sea más interactivo */
+.container ul li a:hover {
+  background-color: #38bdf8;
+  color: #0f172a;
+  transform: translateY(-2px);
+}
+
+.container ul li a:active {
+  transform: translateY(0);
+}
